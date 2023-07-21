@@ -1,0 +1,461 @@
+*{
+    box-sizing:border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    z-index:50;
+    background-color:white;
+
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-left:auto;
+}
+
+.navbar a {
+    padding: 14px 16px;
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.navbar a:hover {
+    background-color: rgb(50.2%, 71.4%, 76.9%,0.7);
+    border-radius: 20px;
+    font-weight:600;
+
+}
+
+section{
+    min-height: 100vh;
+    min-width: 10vh;
+    padding: 80px 100px;
+}
+
+.home{
+    display:flex;
+    align-items:center;
+    position: relative;
+    width: 100%;
+    background-color: rgb(70.6%,83.1%,86.3%,0.8);
+    background-size: cover;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.home .home-box{
+    max-width:44rem;
+    position: relative;
+    display: block;
+}
+
+.home-box h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: .4;
+;
+
+}
+.home-box h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1rem 0;
+    display: inline-grid;
+    margin-top:5px;
+}
+.home-box h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1rem 0;
+    display: inline;
+}
+.home-box p{
+    font-size:1.5rem;
+}
+.home-box .links{
+    margin-top: 30px;
+}
+
+.home-box .links a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:15.5rem;
+    height:4rem;
+    background: transparent;
+    border:.2rem solid rgb(79,150,169);
+    border-radius: 0px;
+    color:black;
+    margin-right:30px
+}
+.home-box .links a:hover{
+    background-color: rgb(50.2%, 71.4%, 76.9%,1);
+}
+.home .image{
+    padding:10px;
+    top: 0;
+    right:0;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.home .image img{
+    background-color: black;
+    width:500px;
+    height:500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about{
+    display:flex;
+    align-items:stretch;
+    justify-content: center;
+    gap:4rem;
+    border:80px solid #80b4c4;
+    height: 100vh;
+
+}
+.about .about-img,.about-content{
+    width:50%;
+}
+
+.about-img img{
+    width: 100%;
+    height: calc(100% - 60px);
+    object-fit: cover;
+    margin: auto;
+    border-radius: 15%;
+    padding: 2.5rem 3rem;
+    gap: 3rem;
+    display: block
+}
+.about-img .cv{
+    background-color: rgb(182,213,221);
+    color:black;
+    width:50%;
+    margin: auto;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.about-img .cv:hover {
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.6s ease;
+}
+
+
+.heading{
+    font-size:4.5rem;
+    text-align:center;
+
+}
+.about-content h2{
+    text-align:left;
+    line-height:1.2;
+    color:rgb(47,90,101);
+}
+
+.about-content h3{
+    font-size:2rem;
+    color:#80b4c4;
+}
+.about-content p{
+    font-size:1.3rem;
+    margin: 1rem 0 1.5rem;
+    font-family: Raleway,sans-serif;
+}
+.about-content .about1{
+    background-color: #bfe1d8;
+}
+.about-content .about2{
+    background-color: #bfd9e1;
+}
+
+.about-content .about1,.about2{
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    display:block;
+}
+
+.about-content .about1 h4,.about-content .about2 h4{
+    font-size: 2rem;
+    color:rgb(47,90,101);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.about-content .about1:hover,
+.about-content .about2:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+.process .process__process-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.process .process__process-container .process__process-box{
+    flex:1 1 30rem;
+    padding: 3rem 2rem 4rem;
+    border-radius:2rem;
+    text-align:center;
+}
+.process__process-box i{
+    font-size:7rem;
+}
+
+.project-section {
+    max-width: 1200px;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.left-section h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.mini-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mini-item {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.mini-item p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.mini-item p:last-child {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.right-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box {
+    display: flex;
+    gap: 1rem;
+}
+
+.box-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+}
+
+
+
+/* Stilurile pentru secțiune */
+
+.my-projects-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 100vw; /* Lățimea secțiunii va fi maxim 100% din viewport */
+    overflow: hidden; /* Ascundem orice conținut care depășește lățimea viewport-ului */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icon-title {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    transition: visibility 0.2s, opacity 0.2s;
+}
+
+.icon:hover .icon-title {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Stilurile pentru gridul de proiecte */
+
+.featured-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; /* Spațiul dintre poze */
+    margin-top: 2rem;
+    width: 100%; /* Lățimea gridului de proiecte va fi 100% din secțiune */
+    max-width: 600px; /* Setăm o lățime maximă pentru a centra gridul */
+}
+
+.project {
+    position: relative;
+    overflow: hidden; /* Ascundem descrierea */
+    width: 100%; /* Lățimea fiecărui element de proiect va fi 100% din grid */
+}
+
+.project img {
+    width: 100%; /* Imaginile vor umple întreaga lățime a fiecărui element de proiect */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: filter 0.3s; /* Adăugăm o tranzitie pentru efectul de întunecare */
+}
+
+.project-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* O culoare de fundal semitransparentă */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0; /* Inițial, setăm opacitatea la 0 pentru a ascunde descrierea */
+    pointer-events: none; /* Pentru a nu bloca interacțiunea cu poza */
+    transition: opacity 0.3s; /* Adăugăm o tranzitie pentru afișarea descrierii la hover */
+}
+
+.project:hover img {
+    filter: brightness(70%); /* La hover, reducem luminozitatea imaginii pentru efectul de întunecare */
+}
+
+.project:hover .project-description {
+    opacity: 1; /* La hover, setăm opacitatea la 1 pentru a afișa descrierea */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
