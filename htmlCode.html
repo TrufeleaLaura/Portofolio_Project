@@ -14,8 +14,13 @@
 </head>
 <body>
     <header class="header">
+        <div class="header__mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-        <nav class="navbar">
+        <nav class="header__navbar">
             <a href="#home">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#process">PROCESS</a>
@@ -25,22 +30,18 @@
     </header>
 
     <section class="home" id="home">
-
-        <div class="home-box">
-        <h3>Hello,I'm</h3>
-        <h1>Trufelea Laura</h1>
-        <h2>Your future WEB DEVELOPER</h2>
-
-        <div class="links">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
+        <div class="home__text-box">
+            <h3>Hello,I'm</h3>
+            <h1>Trufelea Laura</h1>
+            <h2>Your future WEB DEVELOPER</h2>
+            <div class="home__text-box__icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
         </div>
-
+        <div class="home__image-box">
+            <img src="images/mePicture.jpg" alt="A picture with Laura" class="home__image-box__me-picture">
         </div>
-        <div class="image">
-            <img src="images/mePicture.jpg" alt="A picture with Laura" class="mePicture">
-        </div>
-
     </section>
 
     <section class="about" id="about">
@@ -53,7 +54,8 @@
         <h2 class="heading">ABOUT ME</h2>
         <H3>Designing solutions, Not just visuals</H3>
         <p>Pretend you want to go out but then don't. I'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go in or out,
-            guess i'll just stand partway in and partway out, contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap </p>
+            guess i'll just stand partway in and partway out, contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap
+        </p>
         <div class="about1">
             <h4>Sit on the laptop i</h4>
             <p>Sit on the laptop i is playing on your console hooman so purrr purr littel cat, little cat purr purr for trip on catnip. T
@@ -65,33 +67,9 @@
                 shed everywhere shed everywhere stretching attack your ankles chase the red dot,</p>
 
         </div>
-
-
         </div>
-
     </section >
 
-    <section class="process" id="process">
-        <h4 class="heading">PROCESS</h4>
-        <h3>My Working Process</h3>
-        <div class="process__process-container">
-            <div class="process__process-container__process1">
-                <i class='fab fa-codepen'></i>
-                <h4>Strategy</h4>
-                <p>blablabla</p>
-            </div>
-            <div class="process__process-container__process2">
-                <i class='fab fa-codepen'></i>
-                <h4>Strategy</h4>
-                <p>blablabla</p>
-            </div>
-            <div class="strategy3">
-                <i class='process__process-container__process3'></i>
-                <h4>Strategy</h4>
-                <p>blablabla</p>
-            </div>
-        </div>
-    </section>
     <section class="project-section">
         <div class="left-section">
             <h3>What can I do for your needs</h3>
@@ -114,37 +92,40 @@
         <div class="right-section">
             <div class="box">
                 <div class="box-image">
-                    <img src="path_to_image_1.jpg" alt="Image 1">
+                    <img src="/images/mePicture.jpg" alt="Image 1">
                 </div>
                 <div class="content">
-                    <h4>Titlul proiectului 1</h4>
+                    <h4>Titlul proiectului 1 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h4>
                     <p>Descriere proiect 1.</p>
+
                 </div>
             </div>
             <div class="box">
                 <div class="box-image">
-                    <img src="path_to_image_2.jpg" alt="Image 2">
+                    <img src="/images/mePicture.jpg" alt="Image 2">
                 </div>
                 <div class="content">
-                    <h4>Titlul proiectului 2</h4>
+                    <h4>Titlul proiectului 2 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h4>
                     <p>Descriere proiect 2.</p>
+
                 </div>
             </div>
             <div class="box">
                 <div class="box-image">
-                    <img src="path_to_image_3.jpg" alt="Image 3">
+                    <img src="/images/mePicture.jpg" alt="Image 3">
                 </div>
                 <div class="content">
-                    <h4>Titlul proiectului 3</h4>
+                    <h4>Titlul proiectului 3  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h4>
                     <p>Descriere proiect 3.</p>
+
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="my-projects-section">
-        <h2 class="section-title">My Projects</h2>
+    <section class="my-projects-section" id="portofolio">
+        <h2 class="heading">MY PROJECTS</h2>
         <div class="icons">
             <div class="icon">
                 <img src="images/mePicture.jpg" alt="Java Icon">
@@ -197,73 +178,68 @@
                     <p>Descrierea proiectului 4.</p>
                 </div>
             </div>
+            <div class="project">
+                <img src="images/mePicture.jpg" alt="Project 3">
+                <div class="project-description">
+                    <p class="project-title">Project 3</p>
+                    <p>Descrierea proiectului 3.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/mePicture.jpg" alt="Project 3">
+                <div class="project-description">
+                    <p class="project-title">Project 3</p>
+                    <p>Descrierea proiectului 3.</p>
+                </div>
+            </div>
 
         </div>
     </section>
 
 
 
+    <section class="contact-section" id="contact">
+        <div class="subscribe">
+            <h2>Abonează-te la newsletterul nostru</h2>
+            <p>Abonați-vă pentru a primi cele mai noi știri și actualizări.</p>
+            <form class="subscribe-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Abonează-te</button>
+            </form>
+        </div>
 
-    <section class="portofolio" id="portofolio">
-        <h4 class="heading">PORTOFOLIO</h4>
-        <h3>My recent work</h3>
-        <div class="portofolio-container">
-            <div class="portofolio-box">
-                <img src="portofolio1.jpg" alt="portofolio1">
+        <div class="contact-form">
+            <h4 class="heading">CONTACT ME</h4>
+            <form class="contact-form">
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name" required>
 
-                <div class="portofolio-box-text">
-                    <h4>Project 1</h4>
-                    <p>blablabla</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="gender">Gen:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        Masculin
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" required>
+                        Feminin
+                    </label>
                 </div>
-            </div>
 
-            <div class="portofolio-box">
-                <img src="portofolio2.jpg" alt="portofolio1">
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-                <div class="portofolio-box-text">
-                    <h4>Project 1</h4>
-                    <p>blablabla</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="portofolio-box">
-                <img src="portofolio3.jpg" alt="portofolio1">
-
-                <div class="portofolio-box-text">
-                    <h4>Project 1</h4>
-                    <p>blablabla</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="portofolio-box">
-                <img src="portofolio4.jpg" alt="portofolio1">
-
-                <div class="portofolio-box-text">
-                    <h4>Project 1</h4>
-                    <p>blablabla</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+                <button type="submit">Trimite</button>
+            </form>
         </div>
     </section>
-
-    <section class="contact" id="contact">
-        <h4 class="heading">CONTACT</h4>
-        <h3>Get in touch</h3>
-        <form action="#">
-        <div class="contact-box">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="number" placeholder="Phone">
-            <input type="radio" name="option" value="person" >Natural person
-            <input type="radio" name="option" value="company">Legal Person
-        </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Describe me your ideas"></textarea>
-            <input type="submit" value="Send" class="buttonSubmit">
-        </form>
-    </section>
-
     <section class="subscribe" >
         <h4 class="heading">SUBSCRIBE</h4>
         <h3>Subscribe to get latest update from us</h3>
@@ -275,12 +251,44 @@
             </form>
         </div>
     </section>
+    <section class="process" id="process">
+        <h4 class="heading">PROCESS</h4>
+        <h3>My Working Process</h3>
+        <div class="process__process-container">
+            <div class="process__process-container__process1">
+                <i class='fab fa-codepen'></i>
+                <h4>Strategy</h4>
+                <p>blablabla</p>
+            </div>
+            <div class="process__process-container__process2">
+                <i class='fab fa-codepen'></i>
+                <h4>Strategy</h4>
+                <p>blablabla</p>
+            </div>
+            <div class="strategy3">
+                <i class='process__process-container__process3'></i>
+                <h4>Strategy</h4>
+                <p>blablabla</p>
+            </div>
+        </div>
+    </section>
 
     <hr>
     <footer class="footer">
-        <div class="text">
-            <p>Copyright 2023 by Trufelea Laura | All Right Reserved</p>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
         </div>
+        <p class="footer-text"> 2023 Trufelea Laura | All Rights Reserved</p>
     </footer>
+<script> const header = document.querySelector('.header');
+        const navbar = document.querySelector('.header__navbar');
+
+    // Adăugăm evenimentul de click pentru header
+    header.addEventListener('click', () => {
+    header.classList.toggle('active'); // Toggle pentru a adăuga/elimina clasa 'active'
+    });</script>
+
 </body>
 </html>
