@@ -113,7 +113,7 @@
 }
 .strategy__right-box__type-box__content h4 i {
     font-size: 1.2rem;
-    margin-left: 0.5rem; /* Spațiu între iconiță și text */
+    margin-left: 0.5rem;
 }
 
 
@@ -205,17 +205,18 @@
 
 
 
-/* Stilurile pentru secțiune */
+/* -----------------------PROJECTS-------------------*/
 
-.my-projects-section {
+.projects {
     position: relative;
     width: 100%;
+    top:30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    max-width: 100vw; /* Lățimea secțiunii va fi maxim 100% din viewport */
-    overflow: hidden; /* Ascundem orice conținut care depășește lățimea viewport-ului */
+    border:60px solid #80b4c4;
+    padding: 4rem;
+    max-width: 100vw;
 }
 
 .section-title {
@@ -224,29 +225,31 @@
     margin-bottom: 1rem;
 }
 
-.icons {
+.projects__icons-box {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
 }
 
-.icon {
+.projects__icons-box__icon {
     position: relative;
     cursor: pointer;
 }
 
-.icon img {
+.projects__icons-box__icon img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .icon-title {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, 0);
+    margin-top: 10px;
+    margin-left: -20px;
     visibility: hidden;
     opacity: 0;
     background-color: #333;
@@ -254,48 +257,48 @@
     padding: 0.5rem;
     border-radius: 4px;
     font-size: 0.8rem;
-    white-space: nowrap;
     transition: visibility 0.2s, opacity 0.2s;
 }
 
-.icon:hover .icon-title {
+.projects__icons-box__icon:hover .icon-title {
     visibility: visible;
     opacity: 1;
 }
 
-/* Stilurile pentru gridul de proiecte */
 
-.featured-projects-grid {
+
+.projects__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem; /* Spațiul dintre poze */
+    grid-gap: 1rem;
     margin-top: 2rem;
-    width: 100%; /* Lățimea gridului de proiecte va fi 100% din secțiune */
-    max-width: 600px; /* Setăm o lățime maximă pentru a centra gridul */
+    width: 100%;
+    max-width: 1000px;
 }
 
-.project {
+.projects__grid__project-box {
     position: relative;
-    overflow: hidden; /* Ascundem descrierea */
-    width: 100%; /* Lățimea fiecărui element de proiect va fi 100% din grid */
+    overflow: hidden;
+    width: 100%;
+    height:280px;
 }
 
-.project img {
-    width: 100%; /* Imaginile vor umple întreaga lățime a fiecărui element de proiect */
-    height: auto;
+.projects__grid__project-box img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
-    transition: filter 0.3s; /* Adăugăm o tranzitie pentru efectul de întunecare */
+    transition: filter 0.3s;
 }
 
-.project-description {
+.projects__grid__project-box__description {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* O culoare de fundal semitransparentă */
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -305,137 +308,111 @@
     border-radius: 8px;
     font-size: 1rem;
     text-align: center;
-    opacity: 0; /* Inițial, setăm opacitatea la 0 pentru a ascunde descrierea */
-    pointer-events: none; /* Pentru a nu bloca interacțiunea cu poza */
-    transition: opacity 0.3s; /* Adăugăm o tranzitie pentru afișarea descrierii la hover */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
 }
 
-.project:hover img {
-    filter: brightness(70%); /* La hover, reducem luminozitatea imaginii pentru efectul de întunecare */
+.projects__grid__project-box:hover img {
+    filter: brightness(70%);
 }
 
-.project:hover .project-description {
-    opacity: 1; /* La hover, setăm opacitatea la 1 pentru a afișa descrierea */
+.projects__grid__project-box:hover .projects__grid__project-box__description {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .projects {
+        padding: 2rem;
+    }
+
+    .projects__icons-box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .projects__icons-box__icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-title {
+        font-size: 0.7rem;
+    }
+
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects__grid__project-box {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .projects__grid__project-box img {
+        height: 200px;
+    }
+
+    .projects__grid__project-box__description {
+        padding: 0.5rem;
+    }
+
+    .projects__grid__project-box__description p {
+        font-size: 0.9rem;
+    }
+
 }
 
 
 
 
+/* -----------------------------CONTACT------------------------------ */
 
-
-/* Stilurile pentru secțiunea de contact */
-
-.contact-section {
+.contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+    border:60px solid #80b4c4;
+
 }
 
-/* Stilurile pentru partea de abonați */
 
-.subscribe {
+.contact__contact-box {
     flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem; /* Adăugăm o margine între secțiuni pe dispozitivele mobile */
+    max-width: 600px;
+}
+.contact__contact-box .heading{
+    color:rgb(47, 90, 101) ;
 }
 
-.subscribe h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.subscribe p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 1.5rem;
-    text-align: center; /* Centrăm textul în centru pe dispozitivele mobile */
-}
-
-.subscribe-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.subscribe-form label {
-    margin-bottom: 0.5rem;
-}
-
-.subscribe-form input[type="email"] {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.subscribe-form button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Stilurile pentru partea de formular de contact */
-
-.contact-form {
-    flex-basis: 100%;
-}
-
-.contact-form h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.contact-form form {
+.contact__contact-box form {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
 
-.contact-form label {
+.contact__contact-box label {
     font-size: 1.2rem;
     font-weight: bold;
+    color:rgb(47, 90, 101);
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
+.contact__contact-box__form input[type="text"],
+.contact__contact-box__form input[type="email"],
+.contact__contact-box__form input[type="tel"],
+.contact__contact-box__form textarea {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.radio-group {
-    display: flex;
-    gap: 1rem;
-}
 
-.radio-group label {
-    font-size: 1.2rem;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form button {
+.contact__contact-box button {
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: rgb(47, 90, 101);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -443,22 +420,21 @@
     width: 100%;
 }
 
-/* Media queries pentru responsive */
 
 @media screen and (min-width: 768px) {
-    .contact-section {
+    .contact {
         display: flex;
         justify-content: center;
-        align-items:center; /* Aliniem secțiunile sus în layoutul de tip "row" */
+        align-items:center;
     }
 
     .subscribe {
-        flex-basis: 30%; /* Lățimea secțiunii de abonare pe ecranele mari */
-        margin-bottom: 0; /* Anulăm marginea pe ecranele mai mari */
+        flex-basis: 30%;
+        margin-bottom: 0;
     }
 
-    .contact-form {
-        flex-basis: 65%; /* Lățimea formularului de contact pe ecranele mari */
-        margin-left: 2rem; /* Adăugăm o mică margine între secțiunile de abonare și formular pe ecranele mai mari */
+    .contact__contact-box {
+        flex-basis: 65%;
+        margin-left: 2rem;
     }
 }

@@ -359,10 +359,9 @@ section{
 /* Stilurile pentru secțiunea de footer */
 
 .footer {
-    background-color: #333;
+    background-color: #80b4c4;
     color: #fff;
     padding: 2rem;
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -382,7 +381,7 @@ section{
 }
 
 .social-icon:hover {
-    color: #007bff;
+    color: rgb(47, 90, 101);
 }
 
 .footer-text {
