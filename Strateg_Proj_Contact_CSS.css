@@ -23,10 +23,8 @@
     font-size: 3rem;
     font-weight: bold;
     font-family: Raleway,sans-serif;
-
     margin-bottom: 1rem;
     color: rgb(47,90,101);
-
 }
 
 .strategy__left-box p {
@@ -116,7 +114,6 @@
     margin-left: 0.5rem;
 }
 
-
 .arrow-link {
     position: relative;
     bottom: 0;
@@ -126,7 +123,7 @@
     transform: translate(50%, 50%);
 }
 
-/*(vine din stanga) */
+/* vine din stanga */
 @keyframes slide-in-left {
     from {
         transform: translateX(-30%);
@@ -136,7 +133,7 @@
     }
 }
 
-/*  (vine din dreapta) */
+/*  din dreapta */
 @keyframes slide-in-right {
     from {
         transform: translateX(30%);
@@ -146,7 +143,7 @@
     }
 }
 
-/*  (merge spre stânga) */
+/*  merge spre stânga */
 @keyframes slide-out-left {
     from {
         transform: translateX(0);
@@ -156,7 +153,7 @@
     }
 }
 
-/*  (merge spre dreapta) */
+/*  spre dreapta */
 @keyframes slide-out-right {
     from {
         transform: translateX(0);
@@ -180,6 +177,7 @@
 .strategy:not(:hover) .strategy__right-box {
     animation: slide-out-right 1s forwards;
 }
+
 @media (max-width: 1000px) {
     .strategy {
         flex-direction: column;
@@ -202,9 +200,6 @@
 }
 
 
-
-
-
 /* -----------------------PROJECTS-------------------*/
 
 .projects {
@@ -216,13 +211,15 @@
     align-items: center;
     border:60px solid #80b4c4;
     padding: 4rem;
-    max-width: 100vw;
 }
 
 .section-title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+.projects .heading{
+    color:rgb(47, 90, 101) ;
 }
 
 .projects__icons-box {
@@ -244,7 +241,7 @@
     object-fit: cover;
 }
 
-.icon-title {
+.projects__icons-box__icon__icon-title {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -253,19 +250,17 @@
     visibility: hidden;
     opacity: 0;
     background-color: #333;
-    color: #fff;
+    color: white;
     padding: 0.5rem;
     border-radius: 4px;
     font-size: 0.8rem;
     transition: visibility 0.2s, opacity 0.2s;
 }
 
-.projects__icons-box__icon:hover .icon-title {
+.projects__icons-box__icon:hover .projects__icons-box__icon__icon-title {
     visibility: visible;
     opacity: 1;
 }
-
-
 
 .projects__grid {
     display: grid;
@@ -320,6 +315,7 @@
 .projects__grid__project-box:hover .projects__grid__project-box__description {
     opacity: 1;
 }
+
 @media (max-width: 768px) {
     .projects {
         padding: 2rem;
@@ -331,12 +327,16 @@
         gap: 1rem;
     }
 
+    .projects .heading{
+        font-size: 2rem;
+    }
+
     .projects__icons-box__icon img {
         width: 40px;
         height: 40px;
     }
 
-    .icon-title {
+    .projects__icons-box__icon__icon-title {
         font-size: 0.7rem;
     }
 
@@ -364,8 +364,6 @@
 }
 
 
-
-
 /* -----------------------------CONTACT------------------------------ */
 
 .contact {
@@ -378,11 +376,11 @@
 
 }
 
-
 .contact__contact-box {
     flex-basis: 100%;
     max-width: 600px;
 }
+
 .contact__contact-box .heading{
     color:rgb(47, 90, 101) ;
 }
@@ -405,10 +403,9 @@
 .contact__contact-box__form textarea {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 2px solid rgb(47, 90, 101);
     border-radius: 4px;
 }
-
 
 .contact__contact-box button {
     padding: 0.5rem 1rem;
@@ -419,7 +416,6 @@
     cursor: pointer;
     width: 100%;
 }
-
 
 @media screen and (min-width: 768px) {
     .contact {
@@ -436,5 +432,26 @@
     .contact__contact-box {
         flex-basis: 65%;
         margin-left: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .contact__contact-box__form input[type="text"],
+    .contact__contact-box__form input[type="email"],
+    .contact__contact-box__form input[type="tel"],
+
+    .contact__contact-box__form textarea {
+        width: 11rem;
+    }
+    .contact__contact-box button {
+        width: 11rem;
+    }
+    .contact__contact-box__form__radio-group{
+        width: 10rem;
+    }
+    .contact__contact-box .heading{
+        width: 11rem;
+        font-size: 2rem;
     }
 }
