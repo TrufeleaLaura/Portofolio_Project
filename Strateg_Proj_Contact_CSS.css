@@ -20,11 +20,11 @@
 }
 
 .strategy__left-box h3 {
+    margin-bottom: 1rem;
+    color: rgb(47,90,101);
     font-size: 3rem;
     font-weight: bold;
     font-family: Raleway,sans-serif;
-    margin-bottom: 1rem;
-    color: rgb(47,90,101);
 }
 
 .strategy__left-box p {
@@ -41,9 +41,9 @@
 
 .strategy__left-box__mini-grid__mini-box {
     text-align: center;
-    background-color: rgb(160,214,214);
     padding: 1rem;
     border-radius: 8px;
+    background-color: rgb(160,214,214);
 }
 
 .strategy__left-box__mini-grid__mini-box p:first-child {
@@ -304,7 +304,6 @@
     font-size: 1rem;
     text-align: center;
     opacity: 0;
-    pointer-events: none;
     transition: opacity 0.3s;
 }
 
@@ -351,10 +350,6 @@
 
     .projects__grid__project-box img {
         height: 200px;
-    }
-
-    .projects__grid__project-box__description {
-        padding: 0.5rem;
     }
 
     .projects__grid__project-box__description p {
