@@ -146,7 +146,7 @@
 /*  merge spre stânga */
 @keyframes slide-out-left {
     from {
-        transform: translateX(0);
+        transform:translateX(0);
     }
     to {
         transform: translateX(-30%);
