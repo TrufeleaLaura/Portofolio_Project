@@ -315,6 +315,7 @@ section{
         gap: 1rem;
         height: auto;
         padding: 40px;
+
     }
 
     .about .about__about-img,
@@ -366,6 +367,12 @@ section{
     .about__about-box .about__about-box__paragraph-2 p{
         font-size: 0.5rem;
     }
+}
+@media (max-width: 400px){
+    .about{
+        border:30px solid #80b4c4;
+    }
+
 }
 
 

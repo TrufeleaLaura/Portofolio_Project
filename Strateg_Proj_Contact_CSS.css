@@ -1,3 +1,4 @@
+
 .strategy {
     width: 100%;
     margin:auto;
@@ -178,12 +179,32 @@
     animation: slide-out-right 1s forwards;
 }
 
-@media (max-width: 1000px) {
+
+@media  (max-width: 1000px) {
     .strategy {
         flex-direction: column;
         align-items: center;
     }
 
+    .strategy__left-box, .strategy__right-box {
+        margin: 0;
+        width: 100%;
+    }
+
+    .strategy__right-box__type-box {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .strategy__right-box__type-box__image {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 400px){
+    .strategy{
+        border:30px solid #80b4c4;
+    }
     .strategy__left-box, .strategy__right-box {
         margin: 0;
         width: 100%;
@@ -357,6 +378,11 @@
     }
 
 }
+@media (max-width: 400px){
+    .projects{
+        border:30px solid #80b4c4;
+    }
+}
 
 
 /* -----------------------------CONTACT------------------------------ */
@@ -432,6 +458,17 @@
 }
 
 @media screen and (max-width: 440px) {
+    .contact__contact-box {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0;
+        right: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+
     .contact__contact-box__form input[type="text"],
     .contact__contact-box__form input[type="email"],
     .contact__contact-box__form input[type="tel"],
@@ -448,5 +485,10 @@
     .contact__contact-box .heading{
         width: 11rem;
         font-size: 2rem;
+    }
+}
+@media (max-width: 400px){
+    .contact{
+        border:30px solid #80b4c4;
     }
 }
